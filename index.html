@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form class="formulario" method="post">
+    <p>Preencha o formulário abaixo</p>
+
+    <div class="field">
+     <label for="Nome">Nome</label>
+        <input type="text" name="nome" id="Nome"><br>
+        
+    </div>
+
+    <div class="field">
+        <label for="Sobrenome">Sobrenome</label>
+         <input type="text" name="sobrenome"><br>
+
+    </div>
+
+    <div class="field">
+        Endereço: <input type="text" name="endereco"><br>
+    </div>
+
+    <div class="field">
+        Telefone: <input type="text" name="telefone"><br>
+    </div>
+
+    <div class="field">
+        Email: <input type="text" name="email" required><br>
+    </div>
+
+    <div class="field">
+        Cidade: <input type="text" name="cidade"><br>
+    </div>
+
+    <div class="field">
+        Data de nascimento: <input type="date" name="nascimento">
+    </div>
+  <br>
+  <h3>Sintomas</h3>
+
+  <div class="sintomas">
+    <select name="sintomas" multiple>
+      <option value="febre">Febre</option>
+      <option value="dor_muscular">Dor muscular</option>
+      <option value="falta_apetite">Falta de apetite</option>
+      <option value="dor_cabeca">Dor de cabeça</option>
+      <option value="manchas_corpo">Manchas pelo corpo</option>
+      <option value="coceira">Coceira</option>
+      <option value="cansaco">Cansaço</option>
+      <option value="tosse">Tosse</option>
+      <option value="inchaco">Inchaço</option>
+      <option value="falta_ar">Falta de ar</option>
+    </select>
+  </div>
+  
+
+ <h3>Doenças Pré-existentes</h3>
+
+<div class="doençaspre">
+  <select name="doencas" multiple>
+    <option value="doenca_congenita">Doenças congênitas</option>
+    <option value="doenca_cardiovascular">Doenças cardiovasculares</option>
+    <option value="doenca_respiratoria">Doenças respiratórias</option>
+    <option value="doenca_digestiva">Doenças do aparelho digestivo</option>
+    <option value="doenca_visao">Doenças que afetam a visão</option>
+    <option value="doenca_auditiva">Doenças do sistema auditivo</option>
+    <option value="doenca_neurologica">Doenças neurológicas</option>
+    <option value="doenca_trabalho">Doenças relacionadas ao trabalho</option>
+    <option value="problema_coluna">Problema crônico de coluna</option>
+  </select>
+</div>
+
+ <div class="field radiobox">
+    <span>Medicações atuais?</span>
+    <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+    <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+</div>
+<div class="field">
+    <label for="mensagem">Sua mensagem:</label>
+    <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+</div>
+
+  <div>
+    <input type="submit" value="Enviar">
+  </div>
+<br>
+  <div>
+    <input type="reset" value="limpar">
+  </div>
+</form>
+
+    
+</body>
+</html>
